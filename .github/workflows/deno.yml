@@ -15,7 +15,7 @@ jobs:
           export PATH=~/.npm-global/bin:$PATH
           npm install
           npm i -g @angular/cli
-          ng build
+          ng build --prod 
           ls -alh dist/termsheet
 
       - name: Deploy 🚀
