@@ -16,10 +16,10 @@ jobs:
           npm install
           npm i -g @angular/cli
           ng build
-          ls -alh dist
+          ls -alh dist/termsheet
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy.
+          folder: dist/termsheet # The folder the action should deploy.
