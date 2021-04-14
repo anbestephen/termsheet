@@ -14,8 +14,8 @@ jobs:
           npm config set prefix '~/.npm-global'
           export PATH=~/.npm-global/bin:$PATH
           npm install
-          npm i -g @angular/cli
-          ng build --prod 
+          npm i -g @angular/cli@11.2.6
+          ng build
           ls -alh dist/termsheet
 
       - name: Deploy 🚀
