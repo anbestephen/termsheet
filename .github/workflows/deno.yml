@@ -16,7 +16,7 @@ jobs:
           npm install
           npm i -g @angular/cli@11.2.6
           npm i @angular/cdk@11.2.6
-          ng build
+          ng build --prod
           ls -alh dist/termsheet
 
       - name: Deploy 🚀
